@@ -1,0 +1,67 @@
+BODY {
+	text-align: center;
+	font-family:sans-serif, arial, helvetica;
+	margin: 0px;
+}
+
+H1 {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 6px !important;
+}
+
+H2 {
+	margin:0 0 8px 0;
+}
+
+P {
+	margin-top:7px;
+}
+
+#page {
+	position: relative;
+}
+
+#articles {
+	text-align: left;
+}
+
+ARTICLE > A {
+	background: rgb(221,221,221); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(221,221,221,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(221,221,221,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(221,221,221,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+
+	display:block;
+	height:28px;
+	line-height:28px;
+	padding-left:8px;
+	text-decoration: none;
+	color:inherit;
+}
+
+ARTICLE.current > A {
+	background:white;
+	font-weight:bold;
+	filter: none;
+}
+
+ARTICLE .content {
+	display:none;
+}
+
+ARTICLE.current .content {
+	display:block;
+}
+
+ARTICLE.current .content IMG {
+	float:left;
+	width:111px;
+	height:111px;
+	margin:0px 10px 8px 0;
+	padding:4px;
+	box-shadow: 0px 0px 8px gray;
+}

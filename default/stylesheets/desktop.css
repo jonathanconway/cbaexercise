@@ -1,0 +1,37 @@
+#page {
+	width:697px;
+	margin: auto;
+}
+
+#articles {
+	border-right:solid 1px #999999;
+	height:470px;
+	width:197px;
+	padding-top:20px;
+}
+
+ARTICLE > A {
+	border-bottom:solid 1px #999999;
+	border-left:solid 1px #999999;
+}
+
+ARTICLE.current > A {
+	width:189px;
+}
+
+ARTICLE:first-child > A {
+	border-top-left-radius:10px;
+	border-top:solid 1px #999999;
+}
+
+ARTICLE:last-child > A {
+	border-bottom-left-radius:10px;
+}
+
+ARTICLE.current .content {
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:480px;
+	padding-top:10px;
+}

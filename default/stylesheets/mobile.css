@@ -1,0 +1,24 @@
+#articles {
+	width:100%;
+	border-bottom:solid 1px #999999;
+}
+
+ARTICLE {
+	border-top:solid 1px #999999;
+}
+
+ARTICLE.current > A {
+	border-bottom:none;
+	padding-bottom:7px;
+}
+
+ARTICLE:last-child > A {
+}
+
+ARTICLE.current .content {
+	padding:1px 8px 8px 8px;
+}
+
+ARTICLE.current .content H2 {
+	display:none;
+}

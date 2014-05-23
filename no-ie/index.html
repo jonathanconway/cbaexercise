@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Profile Browser</title>
+	<meta name="description" content="">
+	<meta name="author" content="Jonathan Conway">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="stylesheets/cbaexercise.css">
+</head>
+<body>
+
+	<h1>Profile Browser</h1>
+	<div id="page">
+		<div id="articles">
+			<article>
+				<a href="#">{{firstName}} {{lastName}}</a>
+				<div class="content">
+					<img src="{{picture}}" alt="Photo of {{firstName}} {{lastName}}" />
+					<h2>{{firstName}} {{lastName}}</h2>
+					<div>{{bio}}</div>
+				</div>
+			</article>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="scripts/data.js"></script>
+	<script type="text/javascript" src="scripts/cbaexercise.js"></script>
+</body>
+</html>

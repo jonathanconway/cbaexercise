@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Profile Browser</title>
+	<meta name="description" content="">
+	<meta name="author" content="Jonathan Conway">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="stylesheets/cbaexercise.css">
+</head>
+<body>
+
+	<h1>Profile Browser</h1>
+	<div id="page" ng-controller="ProfileController">
+		<div id="articles">
+			<article ng-repeat="profile in profiles | orderBy:'firstName'">
+				<a href="#">{{profile.firstName}} {{profile.lastName}}</a>
+				<div class="content">
+					<img src="{{profile.picture}}" alt="Photo of {{profile.firstName}} {{profile.lastName}}" />
+					<h2>{{profile.firstName}} {{profile.lastName}}</h2>
+					<div ng-bind-html-unsafe="profile.bio">
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="scripts/lib/angular.min.js"></script>
+	<script type="text/javascript" src="scripts/data.js"></script>
+	<script type="text/javascript" src="scripts/cbaexercise.js"></script>
+</body>
+</html>

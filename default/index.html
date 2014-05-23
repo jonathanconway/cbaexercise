@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Profile Browser</title>
+	<meta name="description" content="">
+	<meta name="author" content="Jonathan Conway">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="stylesheets/common.css">
+	<link rel="stylesheet" href="stylesheets/desktop.css" media="screen and (min-width: 700px)">
+	<link rel="stylesheet" href="stylesheets/mobile.css" media="screen and (max-width: 699px)">
+
+	<!--[if lte IE 9]>
+	<link rel="stylesheet" href="stylesheets/desktop.css">
+	<link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+</head>
+<body>
+
+	<h1>Profile Browser</h1>
+	<div id="page">
+		<div id="articles">
+			<article>
+				<a href="#">{{firstName}} {{lastName}}</a>
+				<div class="content">
+					<img src="{{picture}}" alt="Photo of {{firstName}} {{lastName}}" />
+					<h2>{{firstName}} {{lastName}}</h2>
+					<div>{{bio}}</div>
+				</div>
+			</article>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<!--[if lte IE 8]>
+	<script src="scripts/lib/addEventListener.js"></script>
+    <script src="scripts/lib/html5shiv.js"></script>
+	<![endif]-->
+
+	<script src="scripts/data.js"></script>
+	<script src="scripts/cbaexercise.js"></script>
+</body>
+</html>
